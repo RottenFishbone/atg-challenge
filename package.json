@@ -4,8 +4,8 @@
   "description": "Front end for ATG coding challenge",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently --kill-others \"webpack --mode development --watch\" \"tailwindcss -i ./frontend/styles.css -o ./static/styles.css --watch\"",
-    "build": "tailwindcss -i ./frontend/styles.css -o ./frontend/styles.css && webpack --mode production"
+    "dev": "concurrently --kill-others \"webpack --mode development --watch\" \"tailwindcss -i ./frontend/styles.css -o ./frontend/build/styles.css --watch\"",
+    "build": "tailwindcss -i ./frontend/styles.css -o ./frontend/build/styles.css && webpack --mode production"
   },
   "keywords": [],
   "author": "Jayden Dumouchel",
